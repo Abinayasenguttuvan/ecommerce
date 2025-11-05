@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Stackly Ecommerce</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <style>
+    /* ==== ABOUT PAGE STYLES ==== */
+    .about-section {
+      padding: 80px 10%;
+      background: #f9f9f9;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    .about-content {
+      flex: 1 1 500px;
+    }
+
+    .about-content h1 {
+      font-size: 2.5rem;
+      color: #0a74da;
+      margin-bottom: 15px;
+    }
+
+    .about-content p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .about-content h3 {
+      color: #333;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .about-img {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .about-img img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .about-img img:hover {
+      transform: scale(1.05);
+    }
+
+    .mission-section {
+      background: #fff;
+      padding: 60px 10%;
+      text-align: center;
+    }
+
+    .mission-section h2 {
+      font-size: 2rem;
+      color: #0a74da;
+      margin-bottom: 20px;
+    }
+
+    .mission-section p {
+      color: #555;
+      font-size: 1.05rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .values {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .value-card {
+      background: #f3f6ff;
+      padding: 25px;
+      border-radius: 15px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .value-card h4 {
+      color: #0a74da;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background: #0a74da;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ====== HEADER (same as index page) ====== -->
+  <header class="header">
+    <div class="logo">Stackly</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="blog.html">Blog</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="cart.html">🛒 Cart</a>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search products..." />
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </header>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <section class="about-section">
+    <div class="about-content">
+      <h1>About Stackly</h1>
+      <p>
+        Welcome to <strong>Stackly Ecommerce</strong> — your one-stop destination for fashion, electronics, home & kitchen, jewellery, and more!  
+        We believe shopping should be simple, secure, and enjoyable.
+      </p>
+      <p>
+        Founded in 2024, Stackly has grown into a trusted digital marketplace that connects customers with top-quality products from reliable brands and sellers.
+      </p>
+      <h3>Our Journey</h3>
+      <p>
+        What started as a small online store has evolved into a fast-growing ecommerce platform — thanks to your trust and our commitment to excellence.  
+        We constantly innovate to offer faster delivery, exclusive deals, and a seamless shopping experience.
+      </p>
+    </div>
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=800&q=80" alt="Stackly Team" />
+    </div>
+  </section>
+
+  <!-- ====== MISSION & VALUES ====== -->
+  <section class="mission-section">
+    <h2>Our Mission & Values</h2>
+    <p>
+      At Stackly, our mission is to empower customers by giving them access to high-quality products at affordable prices, while supporting local businesses and sustainable growth.
+    </p>
+
+    <div class="values">
+      <div class="value-card">
+        <h4>💡 Innovation</h4>
+        <p>We constantly evolve our platform to make your shopping faster, smarter, and more enjoyable.</p>
+      </div>
+      <div class="value-card">
+        <h4>🤝 Trust</h4>
+        <p>We prioritize transparency and authenticity in every transaction.</p>
+      </div>
+      <div class="value-card">
+        <h4>🌍 Sustainability</h4>
+        <p>We promote eco-friendly products and responsible sourcing practices.</p>
+      </div>
+      <div class="value-card">
+        <h4>🚀 Growth</h4>
+        <p>Empowering small and medium businesses to reach customers nationwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <p>© 2025 Stackly Ecommerce. All rights reserved.</p>
+  </footer>
+</body>
+</html>

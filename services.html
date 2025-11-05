@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly Ecommerce</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="services.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html">
+        <img src="./image.png" alt="Stackly Logo" style="width: 150px;">
+      </a>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search products..." id="searchInput"  autocomplete="off"/>
+      <button onclick="searchProduct()">Search</button>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <!-- <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
+        <div id="searchResults" class="search-results"></div>
+      </div> -->
+      
+
+    <nav class="navbar">
+      <a href="index.html">Home1</a>
+      <a href="#home2">Home2</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#blog">Blog</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+
+      <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== SERVICES HERO ===== -->
+  <section class="services-hero fade-up">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>Delivering quality, reliability, and customer satisfaction with every order.</p>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE DETAILS ===== -->
+  <section class="services-list fade-up">
+    <div class="container">
+      <div class="service-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnEa5gz-b6ClHoNo2zD9Y18p4gk1UNNsZcyQ&s" alt="Fast Delivery">
+        <h2>Fast & Reliable Delivery</h2>
+        <p>We ensure every order reaches you safely and on time. With our trusted logistics partners, enjoy same-day or next-day delivery in select locations.</p>
+        <span class="benefit">🚚 Free shipping on orders above ₹999</span>
+      </div>
+
+      <div class="service-card">
+        <img src="https://www.pngitem.com/pimgs/m/87-877235_24-7-support-png-transparent-png.png" alt="Customer Support">
+        <h2>24/7 Customer Support</h2>
+        <p>Our support team is always here to help — from pre-purchase queries to post-delivery assistance. You can reach us anytime via chat, email, or phone.</p>
+        <span class="benefit">💬 Response time under 10 minutes</span>
+      </div>
+
+      <div class="service-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfhYqomdIFmCeEMB-B1OO6IgMQDPWZanW7uQ&s" alt="Easy Returns">
+        <h2>Easy Returns & Refunds</h2>
+        <p>Shop with confidence! If you’re not satisfied, our simple 7-day return policy ensures hassle-free exchanges and refunds.</p>
+        <span class="benefit">🔄 100% money-back guarantee</span>
+      </div>
+
+      <div class="service-card">
+        <img src="https://static.thenounproject.com/attribution/3852490-600.png" alt="Personalized Recommendations">
+        <h2>Personalized Shopping Experience</h2>
+        <p>Our AI-powered system tailors product suggestions based on your interests, ensuring you always find what you love.</p>
+        <span class="benefit">✨ Curated picks just for you</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials fade-up">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>“Stackly made online shopping effortless. My order arrived within a day, beautifully packed!”</p>
+        <h4>– Priya Sharma</h4>
+        <span>⭐️⭐️⭐️⭐️⭐️</span>
+      </div>
+      <div class="testimonial">
+        <p>“Excellent service! Their customer support helped me exchange a product in just two hours.”</p>
+        <h4>– Rahul Verma</h4>
+        <span>⭐️⭐️⭐️⭐️⭐️</span>
+      </div>
+      <div class="testimonial">
+        <p>“Love the personalized recommendations — it feels like Stackly knows my style!”</p>
+        <h4>– Sneha Gupta</h4>
+        <span>⭐️⭐️⭐️⭐️⭐️</span>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+  
+      <!-- Column 1: Logo and About -->
+      <div class="footer-section about">
+        <img src="./image.png" alt="Stackly Logo" class="footer-logo" style="width: 200px">
+      </div>
+
+      
+  
+      <!-- Column 2: Quick Links -->
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">product </a></li>
+            <li><a href="aboutus.html">about </a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+          </ul>
+      </div>
+  
+      <!-- Column 3: Contact -->
+      <div class="footer-section contact">
+        <h4>Get in Touch</h4>
+        <p> MMR complex,salem,Tamil nadu 636008</p>
+        <p>Email: <a href="mailto:support@stackly.com">info@thestackly.com</a></p>
+        <p>Phone: +91 70107 92745</p>
+
+        <div class="social-icons">
+          <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+          <a href="404.html"><i class="fab fa-twitter"></i></a>
+          <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+          <a href="404.html"><i class="fab fa-instagram"></i></a>
+        </div>
+
+            
+              <iframe
+                  src="https://www.google.com/maps?q=Salem%20Tamil%20Nadu&output=embed"
+                  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="copyright">
+              <p>© 2025 Stackly | All Rights Reserved</p>
+            </div>
+        
+          </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+

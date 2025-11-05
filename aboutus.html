@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Stackly Ecommerce</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  
+
+  <script src="script.js" defer></script>
+  <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: #f4f6f9;
+    color: #333;
+    /* background-image: url("https://img.lovepik.com/background/20211021/large/lovepik-gradual-color-background-of-e-commerce-image_400156442.jpg"); */
+     background: #220422;;
+  }
+
+  
+  /* Header */
+  .header {
+    background: rgb(53, 2, 82);
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    animation: fadeIn 1s ease;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    background: #fff;
+    color: #0a74da;
+    border: none;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ffe600;
+  }
+  
+  /* Cart Icon */
+  .cart-icon {
+    position: relative;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  
+  #cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+  }
+  
+    /* ==== ABOUT PAGE STYLES ==== */
+    .about-section {
+      padding: 80px 10%;
+      background: #220422;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    .about-content {
+      flex: 1 1 500px;
+    }
+
+    .about-content h1 {
+      font-size: 2.5rem;
+      color: #0a74da;
+      margin-bottom: 15px;
+    }
+
+    .about-content p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .about-content h3 {
+      color: #333;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .about-img {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .about-img img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .about-img img:hover {
+      transform: scale(1.05);
+    }
+
+    .mission-section {
+      background: #220422;
+      padding: 60px 10%;
+      text-align: center;
+    }
+
+    .mission-section h2 {
+      font-size: 2rem;
+      color: #0a74da;
+      margin-bottom: 20px;
+    }
+
+    .mission-section p {
+      color: #555;
+      font-size: 1.05rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .values {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .value-card {
+      background: #f3f6ff;
+      padding: 25px;
+      border-radius: 15px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .value-card h4 {
+      color: #0a74da;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background: #0a74da;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    /* ===== TEAM SECTION ===== */
+.team-section {
+  padding: 80px 10%;
+  background:#220422;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.2rem;
+  color: #0a74da;
+  margin-bottom: 15px;
+}
+
+.team-intro {
+  font-size: 1.05rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-card h4 {
+  color: #222;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.team-card span {
+  color: #0a74da;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.team-card p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #0a74da;
+  margin: 0 6px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0553a6;
+}
+
+/* ===== JOIN OUR TEAM SECTION ===== */
+.join-team {
+  background: linear-gradient(120deg, #0a74da, #64b5f6);
+  color: #fff;
+  padding: 100px 10%;
+  text-align: center;
+  border-radius: 0;
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.join-team::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 150%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+  opacity: 0.1;
+  animation: movePattern 30s linear infinite;
+}
+
+@keyframes movePattern {
+  from { transform: translateX(0); }
+  to { transform: translateX(-200px); }
+}
+
+.join-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.join-team h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.join-team p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.join-btn {
+  background: #fff;
+  color: #0a74da;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.join-btn:hover {
+  background: #0a74da;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+
+/* Footer base */
+.footer {
+    background: rgb(53, 2, 82);
+      color: white;
+      padding: 40px 20px 20px;
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+    }
+    
+    /* Footer container layout */
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    
+    /* Footer sections */
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+    }
+    
+    /* Logo + About section */
+    .footer-logo {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    .footer h3 {
+      margin-bottom: 10px;
+      color: #00e0b8;
+    }
+    
+    /* Links section */
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-section ul li {
+      margin: 8px 0;
+    }
+    .footer-section ul li a {
+      text-decoration: none;
+      color: #ddd;
+      transition: color 0.3s;
+    }
+    .footer-section ul li a:hover {
+      color: #00e0b8;
+    }
+    
+    /* Contact + social */
+    .social-icons img {
+      width: 24px;
+      margin-right: 10px;
+      transition: transform 0.3s;
+    }
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+    
+    /* Footer bottom */
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      padding-top: 15px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+    }
+    
+    /* === HERO TEXT ANIMATIONS === */
+.animate-text {
+    font-size: 2.8rem;
+    background: linear-gradient(90deg, #0a74da, #64b5f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s linear infinite;
+  }
+  
+  .animate-subtext {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes gradientMove {
+    from { background-position: 0%; }
+    to { background-position: 100%; }
+  }
+  
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
+  /* === PULSE EFFECT FOR BUTTON === */
+  .pulse {
+    background: #0a74da;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: relative;
+  }
+  
+  .pulse:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(10, 116, 218, 0.4);
+  }
+  
+  #loader img {
+  width: 120px;   /* was 80px earlier */
+  height: 120px;
+  animation: spin 1.5s linear infinite;
+}
+  
+
+
+
+  </style>
+</head>
+<body>
+  <!-- ====== HEADER (same as index page) ====== -->
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="index.html">
+          <img src="./image.png" alt="Stackly Logo" style="width: 150px;">
+        </a>
+  
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." id="searchInput"  autocomplete="off"/>
+        <button onclick="searchProduct()">Search</button>
+        <div id="searchResults" class="search-results"></div>
+      </div>
+  
+      <!-- <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
+          <div id="searchResults" class="search-results"></div>
+        </div> -->
+        
+  
+      <nav class="navbar">
+        <a href="index.html">Home1</a>
+        <a href="#home2">Home2</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="#products">Products</a>
+        <a href="#blog">Blog</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Signup</a>
+  
+        <div class="cart-icon" onclick="toggleCart()">
+          🛒 <span id="cart-count">0</span>
+        </div>
+      </nav>
+    </header>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <section class="about-section">
+    
+    <div class="about-content">
+      <h1>About Stackly</h1>
+      <p>
+        Welcome to <strong>Stackly Ecommerce</strong> — your one-stop destination for fashion, electronics, home & kitchen, jewellery, and more!  
+        We believe shopping should be simple, secure, and enjoyable.
+      </p>
+      <p>
+        Founded in 2024, Stackly has grown into a trusted digital marketplace that connects customers with top-quality products from reliable brands and sellers.
+      </p>
+      <h3>Our Journey</h3>
+      <p>
+        What started as a small online store has evolved into a fast-growing ecommerce platform — thanks to your trust and our commitment to excellence.  
+        We constantly innovate to offer faster delivery, exclusive deals, and a seamless shopping experience.
+      </p>
+    </div>
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=800&q=80" alt="Stackly Team" />
+    </div>
+  </section>
+
+  <!-- ====== MISSION & VALUES ====== -->
+  <section class="mission-section">
+    
+    <h2>Our Mission & Values</h2>
+    <p>
+      At Stackly, our mission is to empower customers by giving them access to high-quality products at affordable prices, while supporting local businesses and sustainable growth.
+    </p>
+
+    <div class="values">
+      <div class="value-card">
+        <h4>💡 Innovation</h4>
+        <p>We constantly evolve our platform to make your shopping faster, smarter, and more enjoyable.</p>
+      </div>
+      <div class="value-card">
+        <h4>🤝 Trust</h4>
+        <p>We prioritize transparency and authenticity in every transaction.</p>
+      </div>
+      <div class="value-card">
+        <h4>🌍 Sustainability</h4>
+        <p>We promote eco-friendly products and responsible sourcing practices.</p>
+      </div>
+      <div class="value-card">
+        <h4>🚀 Growth</h4>
+        <p>Empowering small and medium businesses to reach customers nationwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MEET OUR TEAM ====== -->
+<section class="team-section">
+    
+    <h2>Meet Our Team</h2>
+    <p class="team-intro">
+      Behind every successful delivery, design, and customer experience at Stackly is a dedicated team of dreamers and doers.  
+      We work passionately to make your online shopping smoother every day.
+    </p>
+  
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80" alt="CEO" />
+        <h4>Anna Mcquire </h4>
+        <span>Founder & CEO</span>
+        <p>Leading Stackly’s vision to create the most customer-centric online store for everything you love.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+  
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=600&q=80" alt="Marketing Head" />
+        <h4>Ravi Kumar</h4>
+        <span>Marketing Head</span>
+        <p>Bringing Stackly closer to millions of happy customers through innovative campaigns and outreach.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+  
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&w=600&q=80" alt="Design Lead" />
+        <h4>Priya Sharma</h4>
+        <span>Design Lead</span>
+        <p>Crafting user-friendly and visually stunning experiences across all Stackly platforms.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fabfa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-behance"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+  
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=600&q=80" alt="Tech Lead" />
+        <h4>Rahul Mehta</h4>
+        <span>Technology Lead</span>
+        <p>Building scalable, secure, and high-performance ecommerce systems that power Stackly.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== JOIN OUR TEAM ====== -->
+<!-- <section class="join-team">
+    
+    <div class="join-content">
+      <h2>Join Our Team</h2>
+      <p>
+        We’re always looking for passionate, creative, and driven individuals who want to make a difference.  
+        At Stackly, we believe in teamwork, innovation, and creating opportunities that empower our people and our customers.
+      </p>
+      <a href="contact.html" class="join-btn">Apply Now</a>
+    </div>
+  </section>
+  
+   -->
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-container">
+  
+      <!-- Column 1: Logo and About -->
+      <div class="footer-section about">
+        <img src="./image.png" alt="Stackly Logo" class="footer-logo"style="width: 200px">
+         
+      </div>
+
+      
+  
+      <!-- Column 2: Quick Links -->
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">product </a></li>
+            <li><a href="aboutus.html">about </a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+          </ul>
+      </div>
+  
+      <!-- Column 3: Contact -->
+      <div class="footer-section contact">
+        <h4>Get in Touch</h4>
+        <p> MMR complex,salem,Tamil nadu 636008</p>
+        <p>Email: <a href="mailto:support@stackly.com">info@thestackly.com</a></p>
+        <p>Phone: +91 70107 92745</p>
+
+        <div class="social-icons">
+          <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+          <a href="404.html"><i class="fab fa-twitter"></i></a>
+          <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+          <a href="404.html"><i class="fab fa-instagram"></i></a>
+        </div>
+    
+        <!-- <div class="social-icons">
+            <a href="https://www.facebook.com/people/Stackly-Stackly/pfbid0JtGU9e9Lr3qi7T7zwqd7znjcKBFgJkRNUT9dkSAfVgj5Fea9cnwPDAaKFdqcZVvBl/?rdid=6mn5QnllxYJS3OSw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BrqaZkJRe%2F"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/The_Stackly"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/the-stackly/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/thestackly/#"><i class="fab fa-instagram"></i></a>
+          </div> -->
+              <iframe
+                  src="https://www.google.com/maps?q=Salem%20Tamil%20Nadu&output=embed"
+                  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="copyright">
+              <p>© 2025 Stackly | All Rights Reserved</p>
+            </div>
+        
+          </footer>
+
+</html>

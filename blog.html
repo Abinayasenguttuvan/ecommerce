@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly Ecommerce</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="blog.css" />
+  <script src="blog.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html">
+        <img src="./image.png" alt="Stackly Logo" style="width: 150px;">
+      </a>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search products..." id="searchInput"  autocomplete="off"/>
+      <button onclick="searchProduct()">Search</button>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <!-- <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
+        <div id="searchResults" class="search-results"></div>
+      </div> -->
+      
+
+    <nav class="navbar">
+      <a href="index.html">Home1</a>
+      <a href="#home2">Home2</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="#products">Products</a>
+      <a href="blog.html">Blog</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+
+      <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ===== BLOG HERO ===== -->
+  <section class="blog-hero fade-up">
+    <h1>Our Blog</h1>
+    <p>Latest trends, shopping tips, and lifestyle inspiration — curated for you by Stackly.</p>
+  </section>
+
+  <!-- ===== BLOG FILTERS ===== -->
+  <section class="blog-filters fade-up">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="fashion">Fashion</button>
+    <button class="filter-btn" data-category="electronics">Electronics</button>
+    <button class="filter-btn" data-category="lifestyle">Lifestyle</button>
+    <button class="filter-btn" data-category="beauty">Beauty</button>
+  </section>
+
+  <!-- ===== BLOG GRID ===== -->
+  <section class="blog-grid fade-up">
+    <div class="blog-container">
+      <div class="blog-card" data-category="fashion">
+        <img src="https://img.favpng.com/18/20/19/dress-dress-made-of-leaves-XjRcH3sk_t.jpg" alt="Fashion Trends">
+        <div class="blog-content">
+          <h2>Top 10 Fashion Trends for 2025</h2>
+          <p>Discover the latest styles and how to integrate them into your wardrobe this season.</p>
+          <a href="blog-detail.html" class="read-more">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="electronics">
+        <img src="https://png.pngtree.com/png-vector/20250423/ourmid/pngtree-modern-tech-essentials-a-high-resolution-showcase-of-sleek-electronic-devices-png-image_16049477.png" alt="Smart Gadgets">
+        <div class="blog-content">
+          <h2>Smart Gadgets That Simplify Your Life</h2>
+          <p>From smartwatches to AI home assistants — explore gadgets that redefine convenience.</p>
+          <a href="blog-detail.html" class="read-more">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="lifestyle">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQw0B4X1wcEm6c9LqlCl0gUMrb94dij-i7A&s" alt="Home Decor">
+        <div class="blog-content">
+          <h2>How to Redesign Your Living Space on a Budget</h2>
+          <p>Simple, affordable tips for turning your home into a cozy, modern retreat.</p>
+          <a href="blog-detail.html" class="read-more">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="beauty">
+        <img src="https://w7.pngwing.com/pngs/331/436/png-transparent-beauty-tips-hand-painted-illustrations-beauty-cheats-hand.png" alt="Beauty Tips">
+        <div class="blog-content">
+          <h2>5 Everyday Beauty Hacks You’ll Love</h2>
+          <p>Quick, easy, and affordable ways to keep your skin glowing and healthy.</p>
+          <a href="blog-detail.html" class="read-more">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="fashion">
+        <img src="https://png.pngtree.com/png-vector/20240517/ourmid/pngtree-sustainable-fashion-clothes-recycling-concept-isometric-modern-png-image_12473745.png" alt="Sustainable Fashion">
+        <div class="blog-content">
+          <h2>The Rise of Sustainable Fashion</h2>
+          <p>Eco-friendly clothing brands are changing how we think about fashion — for the better.</p>
+          <a href="blog-detail.html" class="read-more">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+  
+      <!-- Column 1: Logo and About -->
+      <div class="footer-section about">
+        <img src="./image.png" alt="Stackly Logo" class="footer-logo" style="width: 200px">
+      </div>
+
+      
+  
+      <!-- Column 2: Quick Links -->
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">product </a></li>
+            <li><a href="aboutus.html">about </a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+          </ul>
+      </div>
+  
+      <!-- Column 3: Contact -->
+      <div class="footer-section contact">
+        <h4>Get in Touch</h4>
+        <p> MMR complex,salem,Tamil nadu 636008</p>
+        <p>Email: <a href="mailto:support@stackly.com">info@thestackly.com</a></p>
+        <p>Phone: +91 70107 92745</p>
+
+        <div class="social-icons">
+          <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+          <a href="404.html"><i class="fab fa-twitter"></i></a>
+          <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+          <a href="404.html"><i class="fab fa-instagram"></i></a>
+        </div>
+
+            
+              <iframe
+                  src="https://www.google.com/maps?q=Salem%20Tamil%20Nadu&output=embed"
+                  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="copyright">
+              <p>© 2025 Stackly | All Rights Reserved</p>
+            </div>
+        
+          </footer>
+  <script src="blog.js"></script>
+</body>
+</html>
+
+

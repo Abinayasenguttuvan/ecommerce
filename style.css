@@ -47,7 +47,7 @@
   .search-bar button {
     padding: 8px 12px;
     background: #fff;
-    color: #0a74da;
+    color: #3f1a3f;
     border: none;
     margin-left: 5px;
     border-radius: 4px;
@@ -91,10 +91,13 @@
   }
   
   /* Hero */
+
+  
   .hero {
     text-align: center;
+    
     padding: 80px 20px;
-    /* background: linear-gradient(to right, #0a74da, #4facfe); */
+    /* background: rgb(129, 71, 136); */
     color: white;
     animation: fadeInUp 1.2s ease;
   }
@@ -102,7 +105,7 @@
   .shop-now {
     margin-top: 20px;
     background: #fff;
-    color: #0a74da;
+    color: #341838;
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: 600;
@@ -565,4 +568,47 @@
       color: rgba(255,255,255,0.8);
     }
     
+    /* === HERO TEXT ANIMATIONS === */
+.animate-text {
+    font-size: 2.8rem;
+    background: linear-gradient(90deg, #0a74da, #64b5f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s linear infinite;
+  }
+  
+  .animate-subtext {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes gradientMove {
+    from { background-position: 0%; }
+    to { background-position: 100%; }
+  }
+  
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
+  /* === PULSE EFFECT FOR BUTTON === */
+  .pulse {
+    background: #0a74da;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: relative;
+  }
+  
+  .pulse:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(10, 116, 218, 0.4);
+  }
+  
   

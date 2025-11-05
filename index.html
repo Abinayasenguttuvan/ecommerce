@@ -10,12 +10,12 @@
   <!-- Header -->
   <header class="header">
     <a href="index.html">
-        <img src="./image.png" alt="Stackly Logo" style="width: 100px;">
+        <img src="./image.png" alt="Stackly Logo" style="width: 150px;">
       </a>
 
     <div class="search-bar">
       <input type="text" placeholder="Search products..." id="searchInput"  autocomplete="off"/>
-      <button onclick="searchProduct()">Search</button>
+      <a href="404.html"><button onclick="searchProduct()">Search</button></a>
       <div id="searchResults" class="search-results"></div>
     </div>
 
@@ -26,17 +26,17 @@
       
 
     <nav class="navbar">
-      <a href="#home1">Home1</a>
+      <a href="index.html">Home1</a>
       <a href="#home2">Home2</a>
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#products">Products</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="product.html">Products</a>
       <a href="#blog">Blog</a>
       <a href="login.html">Login</a>
       <a href="signup.html">Signup</a>
 
       <div class="cart-icon" onclick="toggleCart()">
-        🛒 <span id="cart-count">0</span>
+        <a href="404.html">   🛒 <span id="cart-count">0</span></a>
       </div>
     </nav>
   </header>
@@ -95,13 +95,7 @@
   </section>
   
 
-  <!-- Hero -->
-  <!-- <section class="hero">
-    <h1>Welcome to Stackly Ecommerce</h1>
-    <p>Shop Fashion, Electronics, Kitchen, Beauty & more!</p>
-    <button class="shop-now">Shop Now</button>
-  </section> -->
-
+  
   <!-- Category Filter -->
   <section class="category-section">
     <h2>Shop by Category</h2>
@@ -111,34 +105,36 @@
         <p>All</p>
       </div>
       <div class="category-card" onclick="filterCategory('electronics')">
-        <img src="https://cdn-icons-png.flaticon.com/512/1041/1041373.png" alt="Electronics">
-        <p>Electronics</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKplc_8Cd5VmneitAq6PY2l-LghrRs9Z0tbA&s" alt="Electronics">
+        <a href="electronics.html"><p>Electronics</p></a>
       </div>
       <div class="category-card" onclick="filterCategory('home')">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Home & Furniture">
-        <p>Home & Furniture</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXVRA-ixUKJIXX16R8OgfahSD0fgHrJ9uhbw&s" alt="Home & Furniture">
+        <a href="furniture.html"><p>Furniture</p></a>
       </div>
       <div class="category-card" onclick="filterCategory('jewellery')">
-        <img src="https://cdn-icons-png.flaticon.com/512/764/764515.png" alt="Jewellery">
-        <p>Jewellery</p>
+        <img src="https://www.nicepng.com/png/detail/32-326839_free-png-diamond-necklace-png-images-transparent-diamond.png" alt="Jewellery">
+        <a href="jewellery.html"><p>Jewellery</p></a>
       </div>
       <div class="category-card" onclick="filterCategory('fashion')">
-        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="Fashion">
-        <p>Fashion</p>
+        <img src="https://www.pngitem.com/pimgs/m/526-5267767_fashion-background-png-hd-transparent-png.png" alt="Fashion">
+        <a href="fashion.html"><p>Fashion</p></a>
       </div>
       <div class="category-card" onclick="filterCategory('food')">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Food">
-        <p>Food</p>
+        <img src="https://www.pngplay.com/wp-content/uploads/13/Snack-Transparent-PNG.png" alt="Food">
+        <a href="food.html"><p>Food</p>
       </div>
       
     </div>
   </section>
 
   <section class="hero">
-    <h1>Welcome to Stackly Ecommerce</h1>
-    <p>Shop Fashion, Electronics, Kitchen, Beauty & more!</p>
-    <button class="shop-now">Shop Now</button>
+   <!-- <h1>Welcome to Stackly Ecommerce</h1>
+    <p>Shop Fashion, Electronics, Kitchen, Beauty & more!</p> -->
+   <a href="login.html"> <button class="shop-now">Shop Now</button></a>
   </section>
+
+  
 
   <!-- Products -->
   <section id="products" class="product-section">
@@ -213,9 +209,7 @@
   
       <!-- Column 1: Logo and About -->
       <div class="footer-section about">
-        <img src="./image.png" alt="Stackly Logo" class="footer-logo">
-        <h3>Stackly purchasing stocks!!!</h3>
-        <p>Purchase stocks from where u are....</p>
+        <img src="./image.png" alt="Stackly Logo" class="footer-logo" style="width: 200px">
       </div>
 
       
@@ -225,10 +219,11 @@
         <h4>Quick Links</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="product1.html">product </a></li>
-          <li><a href="about.html">about</a></li>
+          <li><a href="product.html">product </a></li>
+          <li><a href="aboutus.html">about </a></li>
+          <li><a href="services.html">services</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="contact.html">Contact</a></li> -->
         </ul>
       </div>
   
@@ -245,13 +240,8 @@
           <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
           <a href="404.html"><i class="fab fa-instagram"></i></a>
         </div>
-    
-        <!-- <div class="social-icons">
-            <a href="https://www.facebook.com/people/Stackly-Stackly/pfbid0JtGU9e9Lr3qi7T7zwqd7znjcKBFgJkRNUT9dkSAfVgj5Fea9cnwPDAaKFdqcZVvBl/?rdid=6mn5QnllxYJS3OSw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BrqaZkJRe%2F"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://x.com/The_Stackly"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/company/the-stackly/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/thestackly/#"><i class="fab fa-instagram"></i></a>
-          </div> -->
+
+            
               <iframe
                   src="https://www.google.com/maps?q=Salem%20Tamil%20Nadu&output=embed"
                   width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
